@@ -1,0 +1,190 @@
+/* Name:Ana Duarte - Date:03/25/2021 - Class:WEB 210  ------------------------*/
+  html {
+	background: #324a52;
+}
+
+  body {
+	 
+	  margin:0;
+	  padding: 0;
+	  font-family:'Josefin Sans', sans-serif;
+	  font-size: 18px;
+	  line-height: 1.5;
+  }
+  .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+header { 
+	background: #324a52 ;
+	color: #e0dbcf ;
+
+}
+header p { 
+	font-family:'Josefin Sans', sans-serif;
+	display:block; 
+	text-align: center;
+	
+}
+figure { 
+	width: 80%;
+}
+
+nav {
+   color: #e0dbcf ;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+   margin-top: 5%;
+}
+
+nav a {
+   color:#e0dbcf;
+   text-decoration: none;
+   width: 150px;
+   display: inline-block;
+   text-align: center;
+}
+nav li {
+ color: #e0dbcf;
+ list-style-type:none;
+ float:left;
+}
+
+.container {
+	max-width: 1000px;
+	margin-left: auto ; 
+	margin-right: auto;
+}
+  
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 5vw);
+	grid-gap: 1.5rem; 
+}
+ 
+.gallery__img {
+	width: 100%;
+	height: 95%;
+	object-fit: cover;
+	display: block; 
+	padding-top: 50px;
+	filter:drop-shadow(4px 4px 4px rgb(22, 21, 20));
+}
+  
+.gallery__img:hover {
+	opacity: 0.5;
+}
+.gallery__item--1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3; 
+}
+  
+.gallery__item--2 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+  
+.gallery__item--3 {
+	grid-column-start: 5;
+	grid-column-end: 9;
+	grid-row-start: 1;
+	grid-row-end: 6;
+}
+  
+.gallery__item--4 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 6;
+}
+  
+.gallery__item--5 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 6;
+	grid-row-end: 9;
+}
+  
+.gallery__item--6 {
+	grid-column-start: 5;
+	grid-column-end:9;
+	grid-row-start: 6;
+	grid-row-end: 9;
+}
+
+
+footer { 
+    text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.fa {
+	padding: 10px;
+	font-size: 25px;
+	width: 25px;
+	text-decoration: none; 
+}
+  
+.fa:hover {
+	  opacity: 0.7;
+}
+
+.fa-twitter {
+	background: #324a52;
+	color: #e0dbcf;
+}
+  
+.fa-instagram {
+	background: #324a52;
+	color: #e0dbcf;
+}
+ 
+/* Responsive -----------------------------*/
+
+@media screen and (min-width: 375px){
+
+	.gallery {
+		display: grid;
+		width: 100%;
+	 
+	}
+	.gallery__img {
+		width: 100%;
+		height: 95%;
+	}
+		
+}
+	
+@media screen and (max-width: 2000px){
+	.gallery {
+			display: grid;
+			width: 100%;
+	}			
+
+	.gallery__img {
+			width: 100%;
+			height: 95%;
+	}
+	p {
+		line-height: 1;
+	}
+
+	
+}				
+
+
+
+
+
+
+
+	 
